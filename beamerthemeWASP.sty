@@ -5,8 +5,8 @@
 \RequirePackage{setspace}
 \usetikzlibrary{shapes,arrows,calc}
 \usepackage{pgfplots}
-\usepackage{MinionPro}
-\usepackage{MyriadPro}
+%\usepackage{MinionPro}
+%\usepackage{MyriadPro}
 
 \definecolor{waspgrey}{HTML}{425052}
 \definecolor{wasplightgrey}{HTML}{B3BEBD}
@@ -21,7 +21,7 @@
 \usetikzlibrary{decorations.pathreplacing, backgrounds, trees, arrows.new, patterns, arrows, shapes, decorations.markings, calc, positioning, fit, matrix, decorations.pathmorphing, pgfplots.statistics}
 
 %Babel support
-\providecommand*{\lulogo}{lulogo-en.pdf}
+\providecommand*{\lulogo}{assets/lulogo-en.pdf}
 \AtBeginDocument{
   \@ifpackagewith{babel}{swedish}{%
     \addto\captionsswedish{\renewcommand*\lulogo{lulogo-sv.pdf}}%
@@ -64,7 +64,7 @@
   }%
 
   \begin{beamercolorbox}[wd=\paperwidth,sep=0.15cm,ht=0.7cm]{palette primary inverted}%
-    \hspace{8cm} \includegraphics[width=4cm]{WASP-logo-white.eps}%
+    \hspace{8cm}\hfill \includegraphics[width=4cm]{WASP-logo-white.eps}%
   \end{beamercolorbox}%
   \vskip0pt%
 }
@@ -84,7 +84,7 @@
 \begin{center}
 \begin{tikzpicture}%[overlay]
 
-  \node at (0,0) (titlenode) {\includegraphics[width=8cm]{WASP-logo-grey.eps}};
+  \node at (0,0) (titlenode) {\includegraphics[width=8cm]{assets/WASP-logo-grey.eps}};
 
   \node[align=center, font=\bf\sffamily\LARGE, text width=\paperwidth] at (0, -2cm) (TITLENODE) {\inserttitle};
 
